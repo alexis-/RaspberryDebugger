@@ -484,7 +484,7 @@ namespace RaspberryDebugger.Models.VisualStudio
         /// <summary>
         /// Returns the publish runtime.
         /// </summary>
-        public string Runtime => "linux-arm";
+        public string Runtime => "linux-arm64";
 
         /// <summary>
         /// Returns the framework version.

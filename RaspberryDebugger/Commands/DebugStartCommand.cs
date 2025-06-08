@@ -38,7 +38,9 @@ using Task = System.Threading.Tasks.Task;
 
 namespace RaspberryDebugger.Commands
 {
-    /// <summary>
+  using System.Collections.Generic;
+
+  /// <summary>
     /// Handles the <b>Start Debugging</b> command for Raspberry enabled projects.
     /// </summary>
     internal sealed class DebugStartCommand

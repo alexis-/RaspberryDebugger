@@ -390,8 +390,10 @@ namespace RaspberryDebugger
                         "publish",
                         "--configuration", projectProperties.Configuration,
                         "--framework", projectProperties.Framework,
-                        "--runtime", projectProperties.Runtime,
-                        "--no-self-contained",
+                        //"--runtime", projectProperties.Runtime,
+                        //"--no-self-contained",
+                        "--runtime", "linux-arm64",
+                        "--self-contained", "false",
                         "--output", projectProperties.PublishFolder,
                         projectProperties.FullPath
                         },
@@ -405,8 +407,10 @@ namespace RaspberryDebugger
                         {
                         "publish",
                         "--configuration", projectProperties?.Configuration,
-                        "--runtime", projectProperties?.Runtime,
-                        "--no-self-contained",
+                        //"--runtime", projectProperties?.Runtime,
+                        //"--no-self-contained",
+                        "--runtime", "linux-arm64",
+                        "--self-contained", "false",
                         "--output", projectProperties?.PublishFolder,
                         projectProperties?.FullPath
                         },
